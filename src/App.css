@@ -1,0 +1,7 @@
+@import './style/reset.css';
+@import './style/global.css';
+
+.app-wrapper {
+    padding: 2.5rem;
+    overflow: hidden;
+}

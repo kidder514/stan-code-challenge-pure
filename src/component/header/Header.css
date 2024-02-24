@@ -1,0 +1,28 @@
+.stan-header-wrapper {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.stan-header-wrapper img.stan-logo {
+    height: 2rem;
+}
+
+.stan-header-wrapper nav {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.stan-header-wrapper nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.stan-header-wrapper nav a:not(.active) {
+    color: grey;
+}
