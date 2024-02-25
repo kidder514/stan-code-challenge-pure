@@ -21,24 +21,24 @@ const programListSlice = createSlice({
     name: 'programList',
     initialState,
     reducers: {
-        moveLeft: (state) => {
+        moveLeft: (state: ProgramListStateInterface) => {
             state.indexSelected !== undefined && state.indexSelected > 0 ? state.indexSelected-- : state;
         },
-        moveRight: (state) => {
+        moveRight: (state: ProgramListStateInterface) => {
             state.indexSelected !== undefined && state.indexSelected + 1 < state.data.length ? state.indexSelected++ : state;
         }
     },
     extraReducers: (builder) => {
-        builder.addCase(getProgramList.pending, (state, action) => {
+        builder.addCase(getProgramList.pending, (state: ProgramListStateInterface) => {
             state.isLoading = true;
         })
-        builder.addCase(getProgramList.fulfilled, (state, action) => {
+        builder.addCase(getProgramList.fulfilled, (state: ProgramListStateInterface, action) => {
             const id = action.meta.arg;
             state.isLoading = false;
             state.data = action.payload;
             state.indexSelected = id ? state.data.findIndex(program => program.id == parseInt(id)) : 0;
         })
-        builder.addCase(getProgramList.rejected, (state, action) => {
+        builder.addCase(getProgramList.rejected, (state: ProgramListStateInterface) => {
             state.isLoading = false;
             state.isError = true;
         })

@@ -14,9 +14,8 @@ const Program = () => {
     const programListState = useSelector(selectProgramList);
 
     const handleKeyDown = (e: KeyboardEvent) => {
-        if (e.key === 'Backspace') {
+        if (e.key === 'Backspace')
             navigate(PATH.HOME);
-        }
     };
 
     useEffect(() => {

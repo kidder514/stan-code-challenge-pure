@@ -4,6 +4,7 @@ import { ReactElement } from 'react';
 import { store } from '../redux';
 import { RenderOptions, render } from '@testing-library/react';
 
+// for unit-testing only
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
     return (
         <Provider store={store}>
