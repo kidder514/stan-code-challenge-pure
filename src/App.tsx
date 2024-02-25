@@ -3,12 +3,12 @@ import { Outlet } from 'react-router-dom';
 
 import './App.css'
 
-const App = () => {
-    return (
-        <div className='app-wrapper'>
-            <Header />
+const App = () =>
+    <div className='app-wrapper'>
+        <Header />
+        <div className='content-wrapper'>
             <Outlet />
         </div>
-    )
-}
+    </div>
+
 export default App;

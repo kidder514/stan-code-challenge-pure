@@ -1,0 +1,27 @@
+.stan-program-list-carousel {
+    display: flex;
+    transition: transform .1s ease-in;
+}
+
+.stan-program-list-carousel figure {
+    min-width: 20%;
+}
+
+.stan-program-list-carousel figure .carousel-img-wrapper {
+    width: 100%;
+    padding: 0.125rem;
+    box-sizing: border-box;
+}
+
+.stan-program-list-carousel figure img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 3px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+}
+
+.stan-program-list-carousel figure.selected img {
+    border-color: #0372f8;
+}

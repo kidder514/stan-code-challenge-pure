@@ -1,0 +1,15 @@
+.stan-program-list-placeholder {
+    display: flex;
+}
+
+.stan-program-list-placeholder figure {
+    min-width: 20%;
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+.stan-program-list-placeholder figure div.stan-placeholder-padding-box {
+    width: 100%;
+    background-color: grey;
+    aspect-ratio: 2/3;
+}
