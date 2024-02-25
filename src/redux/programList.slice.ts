@@ -33,9 +33,10 @@ const programListSlice = createSlice({
             state.isLoading = true;
         })
         builder.addCase(getProgramList.fulfilled, (state, action) => {
+            const id = action.meta.arg;
             state.isLoading = false;
             state.data = action.payload;
-            state.indexSelected = 0;
+            state.indexSelected = id ? state.data.findIndex(program => program.id == parseInt(id)) : 0;
         })
         builder.addCase(getProgramList.rejected, (state, action) => {
             state.isLoading = false;

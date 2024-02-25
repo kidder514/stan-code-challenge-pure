@@ -1,0 +1,26 @@
+.stan-single-program {
+    display: flex;
+}
+
+.stan-single-program figure {
+    width: 20%;
+    min-width: 200px;
+    margin-right: 1.5rem
+}
+
+.stan-single-program figure img {
+    width: 100%;
+}
+
+.stan-single-program main {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.stan-single-program main div.description {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
