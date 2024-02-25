@@ -16,10 +16,10 @@ const ProgramCarousel = ({ isLoading, data, isError, indexSelected }: ProgramLis
     }
 
     return (
-        <div className='stan-program-list-carousel' style={{ transform: `translateX(${getOffset()})` }}>
+        <div data-testid={'stan-carousel'} className='stan-program-list-carousel' style={{ transform: `translateX(${getOffset()})` }}>
             {
                 data.map((program, index) =>
-                    <figure key={`${program.id} -program - ${index} `} className={indexSelected === index ? 'selected' : ''}>
+                    <figure role='program-thumbnail' key={`${program.id} -program - ${index} `} className={indexSelected === index ? 'selected' : ''}>
                         <div className='carousel-img-wrapper'>
                             <img src={program.image} alt={program.title} />
                         </div>

@@ -13,7 +13,7 @@ const SingleProgram = ({ isLoading, data, isError, indexSelected }: ProgramListS
 
     const program = data[indexSelected];
     return (
-        <div className='stan-single-program'>
+        <div className='stan-single-program' data-testid='stan-single-program'>
             <figure>
                 <img src={program.image} alt={program.title} />
             </figure>

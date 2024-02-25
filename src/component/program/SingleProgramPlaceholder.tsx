@@ -2,7 +2,7 @@ import './SingleProgramPlaceholder.css'
 
 const SingleProgramPlaceholder = () => {
     return (
-        <div className='stan-single-program-placeholder'>
+        <div className='stan-single-program-placeholder' data-testid='stan-single-program-placeholder'>
             <figure>
             </figure>
             <main>

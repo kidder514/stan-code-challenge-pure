@@ -5,7 +5,7 @@ import logo from '../../../asset/logo.svg'
 import './Header.css';
 
 const Header = () =>
-    <header className='stan-header-wrapper'>
+    <header className='stan-header-wrapper' data-testid='stan-header'>
         <Link to={PATH.HOME}><img src={logo} alt="logo" className="stan-logo" /></Link>
         <nav>
             <NavLink to={PATH.HOME}>Home</NavLink>
